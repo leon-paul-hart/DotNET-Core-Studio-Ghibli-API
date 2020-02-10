@@ -12,13 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioGhibliApi.Tests", "StudioGhibliApi.Tests\StudioGhibliApi.Tests.csproj", "{D0B39ABB-FDAC-497B-A21D-FB1BD00CA4A8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio Ghibli API", "Studio Ghibli API", "{31A6FADB-B4BB-4C11-8FEF-47432AF16D8F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio Ghibli Explorer", "Studio Ghibli Explorer", "{93413FDA-FA77-43FA-BE86-A1B79B77E460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioGhibliExplorer.Tests", "StudioGhibliExplorer.Tests\StudioGhibliExplorer.Tests.csproj", "{C400F225-EAC3-4BEB-9ACF-371C062C946D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioGhibliAPI.Tests", "StudioGhibliAPI.Tests\StudioGhibliAPI.Tests.csproj", "{60B06213-8F1B-442D-B210-CFACD51A2C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioGhibliExplorer.Tests", "StudioGhibliExplorer.Tests\StudioGhibliExplorer.Tests.csproj", "{8535E003-D405-40FC-9051-A6A78346CA46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,14 +34,14 @@ Global
 		{FEF2907F-2555-4B73-B26E-5303A408369C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEF2907F-2555-4B73-B26E-5303A408369C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEF2907F-2555-4B73-B26E-5303A408369C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0B39ABB-FDAC-497B-A21D-FB1BD00CA4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0B39ABB-FDAC-497B-A21D-FB1BD00CA4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0B39ABB-FDAC-497B-A21D-FB1BD00CA4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0B39ABB-FDAC-497B-A21D-FB1BD00CA4A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C400F225-EAC3-4BEB-9ACF-371C062C946D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C400F225-EAC3-4BEB-9ACF-371C062C946D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C400F225-EAC3-4BEB-9ACF-371C062C946D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C400F225-EAC3-4BEB-9ACF-371C062C946D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B06213-8F1B-442D-B210-CFACD51A2C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B06213-8F1B-442D-B210-CFACD51A2C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B06213-8F1B-442D-B210-CFACD51A2C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B06213-8F1B-442D-B210-CFACD51A2C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8535E003-D405-40FC-9051-A6A78346CA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8535E003-D405-40FC-9051-A6A78346CA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8535E003-D405-40FC-9051-A6A78346CA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8535E003-D405-40FC-9051-A6A78346CA46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,8 +49,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6779D9C4-0849-4BA0-A027-BA8C62952012} = {93413FDA-FA77-43FA-BE86-A1B79B77E460}
 		{FEF2907F-2555-4B73-B26E-5303A408369C} = {31A6FADB-B4BB-4C11-8FEF-47432AF16D8F}
-		{D0B39ABB-FDAC-497B-A21D-FB1BD00CA4A8} = {31A6FADB-B4BB-4C11-8FEF-47432AF16D8F}
-		{C400F225-EAC3-4BEB-9ACF-371C062C946D} = {93413FDA-FA77-43FA-BE86-A1B79B77E460}
+		{60B06213-8F1B-442D-B210-CFACD51A2C18} = {31A6FADB-B4BB-4C11-8FEF-47432AF16D8F}
+		{8535E003-D405-40FC-9051-A6A78346CA46} = {93413FDA-FA77-43FA-BE86-A1B79B77E460}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F99BF557-343A-4333-93B5-F85BE9FA893B}
