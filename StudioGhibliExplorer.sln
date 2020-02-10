@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio Ghibli API", "Studio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio Ghibli Explorer", "Studio Ghibli Explorer", "{93413FDA-FA77-43FA-BE86-A1B79B77E460}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudioGhibliApi.Tests", "StudioGhibliAPI.Tests\StudioGhibliApi.Tests.csproj", "{60B06213-8F1B-442D-B210-CFACD51A2C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudioGhibliApi.Tests", "StudioGhibliApi.Tests\StudioGhibliApi.Tests.csproj", "{60B06213-8F1B-442D-B210-CFACD51A2C18}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudioGhibliExplorer.Tests", "StudioGhibliExplorer.Tests\StudioGhibliExplorer.Tests.csproj", "{8535E003-D405-40FC-9051-A6A78346CA46}"
 EndProject
