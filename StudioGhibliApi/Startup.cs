@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+
 using StudioGhibliApi.Data;
 
 namespace StudioGhibliApi
@@ -23,7 +24,7 @@ namespace StudioGhibliApi
             services.AddControllers();
 
             services.AddDbContext<FilmContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("FilmContext")));
+                    options.UseSqlite(Configuration.GetConnectionString("FilmContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
