@@ -12,9 +12,9 @@ https://docs.microsoft.com/en-gb/aspnet/core/tutorials/first-web-api?view=aspnet
 
 ## High Level Plan
 
-[] Create a CRUD API that uses EntityFrameworkCore to access an SQLite database to store it's data
-[] Create an MVC frontend client providing a simple UI to navigate the API in Read Only mode
-[] Add user authentication to the MVC application which allows authorised users to use the full CRUD capabilities of the API
-[] Use Specflow to create Unit Tests and Integration Tests for both the API and MVC client
+- [ ] Create a CRUD API that uses EntityFrameworkCore to access an SQLite database to store it's data
+- [ ] Create an MVC frontend client providing a simple UI to navigate the API in Read Only mode
+- [ ] Add user authentication to the MVC application which allows authorised users to use the full CRUD capabilities of the API
+- [ ] Use Specflow to create Unit Tests and Integration Tests for both the API and MVC client
 
 ---
