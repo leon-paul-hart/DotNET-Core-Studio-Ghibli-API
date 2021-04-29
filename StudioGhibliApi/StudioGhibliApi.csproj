@@ -5,9 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="filmcontext.db" />
+    <None Remove="filmcontext.db-shm" />
+    <None Remove="filmcontext.db-wal" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.5" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="5.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="filmcontext.db" />
+    <Resource Include="filmcontext.db-shm" />
+    <Resource Include="filmcontext.db-wal" />
   </ItemGroup>
 
 
