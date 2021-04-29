@@ -1,6 +1,6 @@
 # .Net Core Studio Ghibli API + MVC Client
 
-![.NET Core](https://github.com/leon-paul-hart/DotNET-Core-Studio-Ghibli-API/workflows/.NET%20Core/badge.svg?branch=master)
+[![.NET](https://github.com/leon-paul-hart/DotNET-Core-Studio-Ghibli-API/actions/workflows/dotnet.yml/badge.svg)](https://github.com/leon-paul-hart/DotNET-Core-Studio-Ghibli-API/actions/workflows/dotnet.yml)
 
 ***Inspired by the wonderful work at https://ghibliapi.herokuapp.com/ by https://github.com/janaipakos/***
 
