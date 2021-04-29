@@ -1,13 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace StudioGhibliApi.Data
+using StudioGhibliApi.Models.Film;
+
+namespace StudioGhibliApi.Data.FilmDbContext
 {
     public class FilmContext : DbContext
     {
-        public DbSet<Models.Film> Film { get; set; }
+        public DbSet<Film> Film { get; set; }
 
-        public FilmContext(DbContextOptions<FilmContext> options)
-            : base(options)
+        public FilmContext(DbContextOptions<FilmContext> options) : base(options)
         {
 
         }

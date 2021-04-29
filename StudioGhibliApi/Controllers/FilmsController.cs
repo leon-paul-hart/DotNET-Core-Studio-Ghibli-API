@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-using StudioGhibliApi.Data;
-using StudioGhibliApi.Models;
+using StudioGhibliApi.Data.FilmDbContext;
+using StudioGhibliApi.Models.Film;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +48,7 @@ namespace StudioGhibliApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutFilm(int id, Film film)
         {
-            if (id != film.Id)
+            if (id != film.FilmId)
             {
                 return BadRequest();
             }
@@ -84,7 +84,7 @@ namespace StudioGhibliApi.Controllers
 
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetFilm", new { id = film.Id }, film);
+            return CreatedAtAction("GetFilm", new { id = film.FilmId }, film);
         }
 
         // DELETE: api/Films/5
@@ -107,7 +107,7 @@ namespace StudioGhibliApi.Controllers
 
         private bool FilmExists(int id)
         {
-            return _context.Film.Any(film => film.Id == id);
+            return _context.Film.Any(film => film.FilmId == id);
         }
     }
 }
