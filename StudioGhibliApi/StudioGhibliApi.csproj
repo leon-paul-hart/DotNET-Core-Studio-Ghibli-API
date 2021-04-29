@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="filmcontext.db" />
-    <None Remove="filmcontext.db-shm" />
-    <None Remove="filmcontext.db-wal" />
+    <None Remove="CharacterContext.db" />
+    <None Remove="FilmContext.db" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,9 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="filmcontext.db" />
-    <Resource Include="filmcontext.db-shm" />
-    <Resource Include="filmcontext.db-wal" />
+    <Resource Include="CharacterContext.db" />
+    <Resource Include="FilmContext.db" />
   </ItemGroup>
 
 
