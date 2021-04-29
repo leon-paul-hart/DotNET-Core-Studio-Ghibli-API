@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 using StudioGhibliApi.Data;
 using StudioGhibliApi.Models;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -30,7 +32,7 @@ namespace StudioGhibliApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Film>> GetFilm(int id)
         {
-            var film = await _context.Film.FindAsync(id);
+            Film film = await _context.Film.FindAsync(id);
 
             if (film == null)
             {
@@ -79,6 +81,7 @@ namespace StudioGhibliApi.Controllers
         public async Task<ActionResult<Film>> PostFilm(Film film)
         {
             _context.Film.Add(film);
+
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetFilm", new { id = film.Id }, film);
@@ -88,13 +91,15 @@ namespace StudioGhibliApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<Film>> DeleteFilm(int id)
         {
-            var film = await _context.Film.FindAsync(id);
+            Film film = await _context.Film.FindAsync(id);
+
             if (film == null)
             {
                 return NotFound();
             }
 
             _context.Film.Remove(film);
+
             await _context.SaveChangesAsync();
 
             return film;
@@ -102,7 +107,7 @@ namespace StudioGhibliApi.Controllers
 
         private bool FilmExists(int id)
         {
-            return _context.Film.Any(e => e.Id == id);
+            return _context.Film.Any(film => film.Id == id);
         }
     }
 }

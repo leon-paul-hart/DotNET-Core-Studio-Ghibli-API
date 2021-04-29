@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+
 using StudioGhibliExplorer.Models;
+
 using System.Diagnostics;
 
 namespace StudioGhibliExplorer.Controllers
