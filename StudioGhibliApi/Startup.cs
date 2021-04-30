@@ -25,10 +25,10 @@ namespace StudioGhibliApi
             services.AddControllers();
 
             services.AddDbContext<FilmContext>(options =>
-                    options.UseSqlite(@"Data Source=.\\FilmContext.db"));
+                    options.UseSqlite(@"Data Source=FilmContext.db"));
 
             services.AddDbContext<CharacterContext>(options =>
-                    options.UseSqlite(@"Data Source=.\\CharacterContext.db"));
+                    options.UseSqlite(@"Data Source=CharacterContext.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

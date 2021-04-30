@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -14,13 +14,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="SpecFlow" Version="3.7.38" />
-    <PackageReference Include="SpecFlow.MsTest" Version="3.7.38" />
-    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.7.38" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StudioGhibliExplorer\StudioGhibliExplorer.csproj" />
+    <ProjectReference Include="..\StudioGhibliApi\StudioGhibliApi.csproj" />
   </ItemGroup>
 
 </Project>

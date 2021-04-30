@@ -11,7 +11,7 @@ namespace StudioGhibliApi.Data.FilmContextFactory
         {
             DbContextOptionsBuilder<FilmContext> optionsBuilder = new DbContextOptionsBuilder<FilmContext>();
 
-            optionsBuilder.UseSqlite("Data Source=.\\FilmContext.db");
+            optionsBuilder.UseSqlite("Data Source=FilmContext.db");
 
             return new FilmContext(optionsBuilder.Options);
         }

@@ -1,0 +1,1 @@
+INSERT INTO "main"."Character" ("CharacterId", "CharacterName", "FilmId") VALUES ('1', 'Princess Mononoke', '1');
