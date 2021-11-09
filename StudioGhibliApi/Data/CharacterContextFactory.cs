@@ -9,7 +9,7 @@ namespace StudioGhibliApi.Data.CharacterContextFactory
     {
         public CharacterContext CreateDbContext(string[] args)
         {
-            DbContextOptionsBuilder<CharacterContext> optionsBuilder = new DbContextOptionsBuilder<CharacterContext>();
+            DbContextOptionsBuilder<CharacterContext> optionsBuilder = new();
 
             optionsBuilder.UseSqlite("Data Source=CharacterContext.db");
 

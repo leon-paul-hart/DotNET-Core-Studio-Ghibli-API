@@ -9,7 +9,7 @@ namespace StudioGhibliApi.Data.FilmContextFactory
     {
         public FilmContext CreateDbContext(string[] args)
         {
-            DbContextOptionsBuilder<FilmContext> optionsBuilder = new DbContextOptionsBuilder<FilmContext>();
+            DbContextOptionsBuilder<FilmContext> optionsBuilder = new();
 
             optionsBuilder.UseSqlite("Data Source=FilmContext.db");
 
