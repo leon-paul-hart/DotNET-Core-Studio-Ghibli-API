@@ -23,10 +23,17 @@
       "launchBrowser": true,
       "launchUrl": "https://localhost:5001/api/films",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "https://localhost:5001",
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:5001"
       },
       "distributionName": ""
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/films",
+      "publishAllPorts": true,
+      "useSSL": true
     }
   }
 }
