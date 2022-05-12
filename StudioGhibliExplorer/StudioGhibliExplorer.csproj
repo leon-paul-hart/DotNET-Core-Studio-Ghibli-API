@@ -1,14 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+	<PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <TypeScriptTarget>ESNext</TypeScriptTarget>
+	  <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <TypeScriptTarget>ESNext</TypeScriptTarget>
+	  <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+	</PropertyGroup>
+
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<UserSecretsId>e4f51be7-fe3c-4f82-b853-a50cb6ad7814</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<AnalysisLevel>latest-all</AnalysisLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.357" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+		<PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.161" />
 	</ItemGroup>
 
 </Project>
