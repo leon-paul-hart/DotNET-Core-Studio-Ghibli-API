@@ -1,66 +1,14 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-@font-face {
+﻿@font-face {
   font-family: "Ghibli";
-  src: local('../font/Ghibli.otf') format(opentype), local('../font/Ghibli-Bold.otf') format(opentype);
-}
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-word;
-}
-
-a {
-  color: black;
-}
-
-a:hover {
-  color: white;
-  text-shadow: black;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-  color: #fff;
-}
-
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-header {
-  top: 10%;
-  font-family: 'Ghibli';
+  src: local('../font/Ghibli.otf') format(opentype);
 }
 
 body {
+  font-family: 'Ghibli';
   background-color: #0366d6;
   background-image: url('../images/Studio_Ghibli_logo.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 50%;
+  background-size: 65%;
   background-position-y: 70px;
-}
-
-h1 {
-  color: black;
 }
