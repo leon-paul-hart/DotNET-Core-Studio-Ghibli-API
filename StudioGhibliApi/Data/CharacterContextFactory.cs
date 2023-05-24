@@ -5,15 +5,15 @@ using StudioGhibliApi.Data.CharacterDbContext;
 
 namespace StudioGhibliApi.Data.CharacterContextFactory
 {
+    ///
     public class CharacterContextFactory : IDesignTimeDbContextFactory<CharacterContext>
     {
+        ///
         public CharacterContext CreateDbContext(string[] args)
         {
-            DbContextOptionsBuilder<CharacterContext> optionsBuilder = new();
+            new DbContextOptionsBuilder<CharacterContext>().UseSqlite("Data Source=CharacterContext.db");
 
-            optionsBuilder.UseSqlite("Data Source=CharacterContext.db");
-
-            return new CharacterContext(optionsBuilder.Options);
+            return new CharacterContext(new DbContextOptionsBuilder<CharacterContext>().Options);
         }
     }
 }

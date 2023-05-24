@@ -5,15 +5,15 @@ using StudioGhibliApi.Data.FilmDbContext;
 
 namespace StudioGhibliApi.Data.FilmContextFactory
 {
+    ///
     public class FilmContextFactory : IDesignTimeDbContextFactory<FilmContext>
     {
+        ///
         public FilmContext CreateDbContext(string[] args)
         {
-            DbContextOptionsBuilder<FilmContext> optionsBuilder = new();
+            new DbContextOptionsBuilder<FilmContext>().UseSqlite("Data Source=FilmContext.db");
 
-            optionsBuilder.UseSqlite("Data Source=FilmContext.db");
-
-            return new FilmContext(optionsBuilder.Options);
+            return new FilmContext(new DbContextOptionsBuilder<FilmContext>().Options);
         }
     }
 }

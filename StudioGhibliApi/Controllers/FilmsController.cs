@@ -10,41 +10,42 @@ using System.Threading.Tasks;
 
 namespace StudioGhibliApi.Controllers
 {
+    ///
     [Route("api/[controller]")]
     [ApiController]
     public class FilmsController : ControllerBase
     {
         private readonly FilmContext _context;
 
+        ///
         public FilmsController(FilmContext context)
         {
             _context = context;
         }
 
-        // GET: api/Films
+        /// GET: api/Films
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Film>>> GetFilm()
         {
             return await _context.Film.ToListAsync();
         }
 
-        // GET: api/Films/5
+        /// GET: api/Films/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Film>> GetFilm(int id)
         {
-            Film film = await _context.Film.FindAsync(id);
-
-            if (film == null)
+            switch (await _context.Film.FindAsync(id))
             {
-                return NotFound();
+                case null:
+                    return NotFound();
+                default:
+                    return await _context.Film.FindAsync(id);
             }
-
-            return film;
         }
 
-        // PUT: api/Films/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// PUT: api/Films/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutFilm(int id, Film film)
         {
@@ -74,9 +75,9 @@ namespace StudioGhibliApi.Controllers
             return NoContent();
         }
 
-        // POST: api/Films
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// POST: api/Films
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
         public async Task<ActionResult<Film>> PostFilm(Film film)
         {
@@ -87,7 +88,7 @@ namespace StudioGhibliApi.Controllers
             return CreatedAtAction("GetFilm", new { id = film.FilmId }, film);
         }
 
-        // DELETE: api/Films/5
+        /// DELETE: api/Films/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Film>> DeleteFilm(int id)
         {
