@@ -29,7 +29,7 @@ namespace StudioGhibliApi.Tests
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "StudioGhibliAPI.feature"
+#line 1 "StudioGhibliApi.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
