@@ -1,0 +1,11 @@
+﻿{
+  "unitTestProvider": {
+    "name": "MSTest"
+  },
+  "bindingCulture": {
+    "language": "en-gb"
+  },
+  "language": {
+    "feature": "en-gb"
+  }
+}
