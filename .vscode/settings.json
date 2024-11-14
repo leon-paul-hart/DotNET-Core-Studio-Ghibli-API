@@ -3,13 +3,13 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "database": "${workspaceFolder:DotNET-Core-Studio-Ghibli-API}/StudioGhibliApi/FilmContext.db",
+            "database": "${workspaceFolder:DotNET-Core-Studio-Ghibli-Api}/StudioGhibliApi/FilmContext.db",
             "name": "FilmContext"
         },
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "database": "${workspaceFolder:DotNET-Core-Studio-Ghibli-API}/StudioGhibliApi/CharacterContext.db",
+            "database": "${workspaceFolder:DotNET-Core-Studio-Ghibli-Api}/StudioGhibliApi/CharacterContext.db",
             "name": "CharacterContext"
         }
     ],
