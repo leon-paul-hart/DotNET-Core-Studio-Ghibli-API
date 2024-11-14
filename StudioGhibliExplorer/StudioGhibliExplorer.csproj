@@ -11,7 +11,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<UserSecretsId>e4f51be7-fe3c-4f82-b853-a50cb6ad7814</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<Nullable>enable</Nullable>
@@ -29,8 +29,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.396" />
-		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+		<PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.426" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
 		<PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
 	</ItemGroup>
 
